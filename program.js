@@ -6,10 +6,10 @@ process.stdin.on('readable', function() {
         if (instruction === '/exit') {
             process.stdout.write('Quitting app!\n');
             process.exit();
-       	 } else if (instruction === 'info'){
-		console.log('Jezyk Systemowy to: ' + process.env.LANG + ' 'Wersja Node to:' + process.version.node);
-		process.exit();
-	 } else {
+        } else if (instruction === 'info'){
+            console.log('Jezyk Systemowy to: ' + process.env.LANG + 'Wersja Node to:' + process.version.node);
+            process.exit();
+        } else {
             process.stderr.write('Wrong instruction!');
         }
     }
